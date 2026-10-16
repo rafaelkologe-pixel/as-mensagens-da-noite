@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>As Mensagens da Noite</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main>
+
+        <!-- ==================== -->
+        <!-- TELA INICIAL -->
+        <!-- ==================== -->
+
+        <section id="tela-inicial">
+
+            <div class="icone">
+                🔎
+            </div>
+
+            <h1>
+                AS MENSAGENS DA NOITE
+            </h1>
+
+            <p class="caso">
+                CASO 001
+            </p>
+
+            <p>
+                Uma semana em uma casa antiga na serra.
+                <br>
+                Seis amigos.
+                <br>
+                Um assassinato.
+                <br>
+                E uma verdade escondida entre eles.
+            </p>
+
+            <button onclick="iniciarInvestigacao()">
+                INICIAR INVESTIGAÇÃO
+            </button>
+
+        </section>
+
+
+        <!-- ==================== -->
+        <!-- TELA DE INTRODUÇÃO -->
+        <!-- ==================== -->
+
+        <section id="tela-introducao" class="escondida">
+
+            <p class="data">
+                QUARTA-FEIRA — 23:47
+            </p>
+
+            <h2>
+                UMA NOITE NORMAL
+            </h2>
+
+            <p>
+                A casa estava silenciosa.
+                <br>
+                Todos estavam juntos.
+                <br><br>
+                Até que Lara saiu...
+            </p>
+
+            <button onclick="continuarHistoria()">
+                CONTINUAR
+            </button>
+
+        </section>
+
+
+        <!-- ==================== -->
+        <!-- TELA DA HISTÓRIA -->
+        <!-- ==================== -->
+
+        <section id="tela-historia" class="escondida">
+
+            <p class="data">
+                QUARTA-FEIRA — 20:15
+            </p>
+
+            <h2>
+                A NOITE DO CRIME
+            </h2>
+
+            <div class="historia">
+
+                <p>
+                    Eu, Lara, Bia, Iago, Pedro e Sara somos amigos desde o
+                    sétimo ano e resolvemos passar uma semana numa casa antiga
+                    na serra, sem pais nem regras chatas.
+                </p>
+
+                <p>
+                    Lara era a mais animada, observadora e amava o campo.
+                    Dias antes, contou que tinha descoberto um segredo muito
+                    feio de alguém do grupo e ia contar tudo quando tivesse
+                    cem por cento de certeza.
+                </p>
+
+                <p>
+                    Na noite do crime, depois do jantar, o clima já estava
+                    meio estranho.
+                </p>
+
+                <p>
+                    Antes de sair, Lara ficou um pouco na cozinha, guardando
+                    algumas anotações em um caderno que mantinha sempre com ela.
+                </p>
+
+                <p>
+                    Ela falou baixinho que precisava confirmar alguns detalhes
+                    e que voltaria logo.
+                </p>
+
+                <p>
+                    Então saiu para caminhar e respirar ar puro.
+                </p>
+
+                <p>
+                    Mas Lara não voltou.
+                </p>
+
+                <p>
+                    Passou uma hora.
+                </p>
+
+                <p>
+                    Depois duas.
+                </p>
+
+                <p>
+                    Fomos procurar pela casa e pelos arredores.
+                </p>
+
+                <p>
+                    Até que a encontramos caída perto do galpão velho,
+                    no chão de terra.
+                </p>
+
+                <p>
+                    A lanterna estava longe do seu alcance.
+                </p>
+
+                <p>
+                    O local parecia calmo, mas havia sinais de uma pequena
+                    luta por perto.
+                </p>
+
+
+                <!-- MENSAGENS -->
+
+                <div class="mensagem-caixa">
+
+                    <p>
+                        Alguns minutos depois...
+                    </p>
+
+                    <span>
+                        📱
+                    </span>
+
+                    <strong>
+                        NÚMERO DESCONHECIDO
+                    </strong>
+
+                    <div class="letras">
+                        L
+                    </div>
+
+                    <div class="letras">
+                        L
+                    </div>
+
+                    <div class="letras">
+                        L
+                    </div>
+
+                </div>
+
+
+                <p class="destaque">
+                    O culpado ainda estava ali.
+                </p>
+
+            </div>
+
+            <button onclick="continuarInvestigacao()">
+                CONTINUAR
+            </button>
+
+        </section>
+
+
+       <!-- TELA DE SUSPEITOS -->
+<section id="tela-suspeitos" class="escondida">
+
+    <p class="data">
+        OS ENVOLVIDOS
+    </p>
+
+    <h2>
+        SUSPEITOS
+    </h2>
+
+    <p class="introducao-suspeitos">
+        Todos estavam na casa naquela noite.
+        <br>
+        Todos tinham algo a esconder.
+    </p>
+
+
+    <div class="suspeitos">
+
+        <!-- BIA -->
+        <div class="suspeito">
+
+            <img 
+                src="bia.png.jpeg" 
+                alt="Bia"
+                class="foto-suspeito"
+            >
+
+            <h3>BIA</h3>
+
+            <p>
+                Nervosa, ciumenta e muito atenta aos detalhes.
+            </p>
+
+        </div>
+
+
+        <!-- IAGO -->
+        <div class="suspeito">
+
+            <img 
+    src="iago.png.jpeg" 
+    alt="Iago"
+    class="foto-suspeito foto-iago"
+>
+
+            <h3>IAGO</h3>
+
+            <p>
+                Calado, reservado e apareceu com arranhões nas mãos.
+            </p>
+
+        </div>
+
+
+        <!-- PEDRO -->
+        <div class="suspeito">
+
+           <img 
+    src="pedro.png.jpeg" 
+    alt="Pedro"
+    class="foto-suspeito foto-pedro"
+>
+            <h3>PEDRO</h3>
+
+            <p>
+                Ansioso, fala demais e seu álibi não foi confirmado.
+            </p>
+
+        </div>
+
+
+        <!-- SARA -->
+        <div class="suspeito">
+
+          <img 
+    src="sara.png.jpeg" 
+    alt="Sara"
+    class="foto-suspeito foto-sara"
+>
+
+            <h3>SARA</h3>
+
+            <p>
+                Tranquila por fora, mas esconde informações importantes.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <button onclick="irParaPerguntas()">
+        COMEÇAR INVESTIGAÇÃO
+    </button>
+
+</section>
+       <!-- ==================== -->
+<!-- TELA DE INVESTIGAÇÃO -->
+<!-- ==================== -->
+
+<section id="tela-investigacao" class="escondida">
+
+    <p class="data">
+        INVESTIGAÇÃO
+    </p>
+
+    <h2>
+        ANALISE AS EVIDÊNCIAS
+    </h2>
+
+    <div class="progresso-investigacao">
+
+        <div class="texto-progresso">
+            PERGUNTA <span id="numero-pergunta">1</span> DE 12
+        </div>
+
+        <div class="barra">
+            <div id="barra-progresso"></div>
+        </div>
+
+    </div>
+
+
+    <!-- PERGUNTA -->
+
+    <div class="caixa-pergunta">
+
+        <p id="texto-pergunta" class="pergunta">
+            Carregando pergunta...
+        </p>
+
+    </div>
+
+
+    <!-- ALTERNATIVAS -->
+
+    <div id="alternativas" class="alternativas">
+        <!-- O JavaScript vai colocar as alternativas aqui -->
+    </div>
+
+
+    <!-- FEEDBACK -->
+
+    <p id="feedback-pergunta" class="feedback-pergunta"></p>
+
+
+    <!-- BOTÃO RESPONDER -->
+
+    <button id="botao-responder" onclick="responderPergunta()">
+        RESPONDER
+    </button>
+
+
+    <!-- BOTÃO PRÓXIMA -->
+
+    <button
+        id="botao-proxima"
+        class="escondida"
+        onclick="proximaPergunta()"
+    >
+        PRÓXIMA PERGUNTA
+    </button>
+
+
+    <!-- QUADRO DE PISTAS -->
+
+    <div class="quadro-pistas">
+
+        <h3>
+            🔎 PISTAS DESCOBERTAS
+        </h3>
+
+        <p id="contador-pistas">
+            0 de 12 pistas descobertas
+        </p>
+
+        <div id="lista-pistas">
+
+            <p>
+                Nenhuma pista descoberta ainda.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==================== -->
+<!-- TELA DE ACUSAÇÃO -->
+<!-- ==================== -->
+
+<section id="tela-acusacao" class="escondida">
+
+    <p class="data">
+        CONCLUSÃO
+    </p>
+
+    <h2>
+        QUEM É O CULPADO?
+    </h2>
+
+    <p class="texto-acusacao">
+        Você analisou as evidências.
+        <br>
+        Agora escolha quem você acredita ser responsável.
+    </p>
+
+
+    <div class="opcoes-acusacao">
+
+
+        <button
+            class="suspeito-acusacao"
+            onclick="selecionarAcusado('Bia', this)"
+        >
+            BIA
+        </button>
+
+
+        <button
+            class="suspeito-acusacao"
+            onclick="selecionarAcusado('Iago', this)"
+        >
+            IAGO
+        </button>
+
+
+        <button
+            class="suspeito-acusacao"
+            onclick="selecionarAcusado('Pedro', this)"
+        >
+            PEDRO
+        </button>
+
+
+        <button
+            class="suspeito-acusacao"
+            onclick="selecionarAcusado('Sara', this)"
+        >
+            SARA
+        </button>
+
+    </div>
+
+
+    <p id="acusacao-escolhida">
+        Nenhum suspeito selecionado.
+    </p>
+
+
+    <button
+        id="botao-confirmar-acusacao"
+        onclick="confirmarAcusacao()"
+        disabled
+    >
+        CONFIRMAR ACUSAÇÃO
+    </button>
+
+
+    <div
+        id="resultado-acusacao"
+        class="resultado-acusacao escondida"
+    >
+
+        <h3 id="titulo-resultado"></h3>
+
+        <p id="texto-resultado"></p>
+
+        <button onclick="reiniciarJogo()">
+            VOLTAR AO INÍCIO
+        </button>
+
+    </div>
+
+</section>
+</section>
+
+
+<!-- ==================== -->
+<!-- TELA DE REVELAÇÃO -->
+<!-- ==================== -->
+
+<section id="tela-revelacao" class="escondida">
+
+    <p class="data">
+        VERDADE REVELADA
+    </p>
+
+    <h2>
+        O QUE REALMENTE ACONTECEU
+    </h2>
+
+    <div class="progresso-revelacao">
+
+        REVELAÇÃO
+        <span id="numero-revelacao">1</span>
+        DE 7
+
+    </div>
+
+
+    <div class="caixa-revelacao">
+
+        <h3 id="titulo-revelacao">
+            O SEGREDO
+        </h3>
+
+        <p id="texto-revelacao">
+            ...
+        </p>
+
+    </div>
+
+
+    <button
+        id="botao-revelacao"
+        onclick="proximaRevelacao()"
+    >
+        CONTINUAR REVELAÇÃO
+    </button>
+
+</section>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

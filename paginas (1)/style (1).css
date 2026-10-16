@@ -1,0 +1,714 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #0a0a0a;
+
+    color: white;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* Caixa principal */
+
+main {
+    width: 100%;
+    max-width: 900px;
+
+    background: #151515;
+
+    border: 1px solid #333;
+
+    border-radius: 15px;
+
+    padding: 60px 40px;
+
+    text-align: center;
+
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
+}
+
+/* Ícone */
+
+.icone {
+    font-size: 65px;
+
+    margin-bottom: 20px;
+}
+
+/* Título */
+
+h1 {
+    font-size: 55px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+/* Número do caso */
+
+.caso {
+    color: #a0a0a0;
+
+    font-size: 15px;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 35px;
+}
+
+/* Texto */
+
+p {
+    color: #bdbdbd;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+/* Botões */
+
+button {
+    margin-top: 35px;
+
+    padding: 15px 30px;
+
+    background: #8b0000;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #b30000;
+
+    transform: scale(1.05);
+}
+
+/* Telas escondidas */
+
+.escondida {
+    display: none;
+}
+
+/* Data */
+
+.data {
+    color: #888;
+
+    font-size: 14px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 25px;
+}
+
+/* Títulos secundários */
+
+h2 {
+    font-size: 35px;
+
+    margin-bottom: 25px;
+}
+
+/* História */
+
+.historia {
+    text-align: left;
+
+    margin-top: 30px;
+
+    margin-bottom: 35px;
+}
+
+.historia p {
+    margin-bottom: 22px;
+}
+
+/* Caixa das mensagens */
+
+.mensagem-caixa {
+    margin-top: 35px;
+
+    margin-bottom: 35px;
+
+    padding: 25px;
+
+    background: #0b0b0b;
+
+    border: 1px solid #333;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.mensagem-caixa p {
+    color: #777;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+}
+
+.mensagem-caixa span {
+    display: block;
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+.mensagem-caixa strong {
+    display: block;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    color: #888;
+
+    margin-bottom: 20px;
+}
+
+/* Letras L */
+
+.letras {
+    font-size: 45px;
+
+    font-weight: bold;
+
+    color: #b30000;
+
+    margin: 8px 0;
+}
+
+/* Frase importante */
+
+.destaque {
+    text-align: center;
+
+    font-size: 22px !important;
+
+    font-weight: bold;
+
+    color: white !important;
+
+    margin-top: 35px;
+}
+/* TELA DOS SUSPEITOS */
+
+.introducao-suspeitos {
+    margin-bottom: 30px;
+}
+
+
+/* Organização dos suspeitos */
+
+.suspeitos {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+    margin-top: 30px;
+
+    margin-bottom: 30px;
+}
+
+
+/* Card de cada suspeito */
+
+.suspeito {
+    background: #0d0d0d;
+
+    border: 1px solid #333;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    transition: 0.2s;
+}
+
+
+.suspeito:hover {
+    border-color: #8b0000;
+
+    transform: translateY(-3px);
+}
+
+
+/* Espaço para futura foto */
+
+.foto-suspeito {
+    width: 100px;
+
+    height: 100px;
+
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+
+    background: #222;
+
+    border: 2px solid #555;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 35px;
+
+    color: #888;
+}
+
+
+/* Nome */
+
+.suspeito h3 {
+    font-size: 20px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Descrição */
+
+.suspeito p {
+    font-size: 15px;
+
+    color: #999;
+}
+/* TELA DE INVESTIGAÇÃO */
+
+.numero-pergunta {
+    color: #888;
+
+    font-size: 14px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+}
+
+.caixa-pergunta {
+    background: #0b0b0b;
+
+    border: 1px solid #333;
+
+    border-radius: 10px;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+}
+
+.pergunta {
+    color: white;
+
+    font-size: 20px;
+}
+
+
+/* ALTERNATIVAS */
+
+.alternativas {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    margin-bottom: 10px;
+}
+
+.alternativa {
+    margin-top: 0;
+
+    width: 100%;
+}
+
+
+/* QUADRO DE PISTAS */
+
+.quadro-pistas {
+    margin-top: 40px;
+
+    padding: 20px;
+
+    background: #0b0b0b;
+
+    border: 1px solid #333;
+
+    border-radius: 10px;
+
+    text-align: left;
+}
+
+.quadro-pistas h3 {
+    margin-bottom: 15px;
+
+    font-size: 17px;
+}
+
+.quadro-pistas p {
+    color: #777;
+
+    font-size: 15px;
+}
+/* PROGRESSO DA INVESTIGAÇÃO */
+
+.progresso-investigacao {
+    margin-bottom: 25px;
+}
+
+.texto-progresso {
+    color: #888;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.barra {
+    width: 100%;
+    height: 8px;
+    background: #292929;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#barra-progresso {
+    width: 12.5%;
+    height: 100%;
+    background: #8b0000;
+    transition: 0.3s;
+}
+
+
+/* QUADRO DE PISTAS */
+
+.quadro-pistas {
+    margin-top: 40px;
+    padding: 20px;
+
+    background: #0b0b0b;
+
+    border: 1px solid #333;
+    border-radius: 10px;
+
+    text-align: left;
+}
+
+.quadro-pistas h3 {
+    margin-bottom: 10px;
+}
+
+#contador-pistas {
+    color: #888;
+    font-size: 14px;
+}
+
+#lista-pistas {
+    margin-top: 15px;
+}
+
+.pista {
+    background: #171717;
+
+    border-left: 3px solid #8b0000;
+
+    padding: 12px;
+
+    margin-bottom: 10px;
+
+    font-size: 15px;
+}
+/* ==========================================
+   SISTEMA DE PERGUNTAS
+   ========================================== */
+
+.feedback-pergunta {
+    min-height: 30px;
+
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+    font-weight: bold;
+
+    color: white;
+}
+
+.alternativa {
+    margin-top: 0;
+
+    width: 100%;
+}
+
+.alternativa.selecionada {
+    border: 2px solid #8b0000;
+}
+
+.alternativa.correta {
+    background: #164d28;
+
+    border: 2px solid #2d9b50;
+}
+
+.alternativa.errada {
+    background: #5b1818;
+
+    border: 2px solid #bb3333;
+}
+
+.alternativa:disabled {
+    cursor: not-allowed;
+
+    opacity: 0.9;
+}
+
+#botao-proxima {
+    margin-top: 15px;
+}
+/* ==========================================
+   ACUSAÇÃO
+   ========================================== */
+
+.opcoes-acusacao {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    margin-top: 30px;
+
+    margin-bottom: 25px;
+}
+
+.suspeito-acusacao {
+    margin-top: 0;
+
+    width: 100%;
+
+    padding: 20px;
+
+    background: #1b1b1b;
+
+    border: 1px solid #444;
+}
+
+.suspeito-acusacao:hover {
+    background: #8b0000;
+}
+
+.suspeito-acusacao.acusado-selecionado {
+    background: #8b0000;
+
+    border: 2px solid #d00000;
+}
+
+#acusacao-escolhida {
+    color: #999;
+
+    font-size: 15px;
+
+    margin-bottom: 10px;
+}
+
+#botao-confirmar-acusacao:disabled {
+    background: #444;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+.resultado-acusacao {
+    margin-top: 35px;
+
+    padding: 25px;
+
+    background: #0b0b0b;
+
+    border: 1px solid #333;
+
+    border-radius: 10px;
+}
+
+.resultado-acusacao h3 {
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+.resultado-acusacao p {
+    margin-bottom: 20px;
+}
+/* ==========================================
+   TELA DE REVELAÇÃO
+   ========================================== */
+
+.progresso-revelacao {
+    color: #888;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 25px;
+}
+
+.caixa-revelacao {
+    background: #0b0b0b;
+
+    border: 1px solid #333;
+
+    border-radius: 10px;
+
+    padding: 35px 25px;
+
+    margin-bottom: 30px;
+
+    animation: aparecer 0.4s ease;
+}
+
+.caixa-revelacao h3 {
+    color: #b30000;
+
+    font-size: 26px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+.caixa-revelacao p {
+    color: #ddd;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+/* ==========================================
+   INFORMAÇÕES DOS SUSPEITOS
+   ========================================== */
+
+.tipo-suspeito {
+    color: #777 !important;
+
+    font-size: 12px !important;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.suspeito p {
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    margin-bottom: 10px;
+
+    text-align: left;
+}
+
+.suspeito strong {
+    color: #bbb;
+}
+/* FOTOS DOS SUSPEITOS */
+
+.suspeitos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.suspeito {
+    background: #0d0d0d;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.foto-suspeito {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.suspeito h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.suspeito p {
+    font-size: 14px;
+    color: #999;
+}
+
+@media (max-width: 700px) {
+
+    .suspeitos {
+        grid-template-columns: 1fr;
+    }
+
+}
+.foto-pedro {
+    object-position: center 15%;
+}
+.foto-iago {
+    object-position: center 25%;
+}
+.foto-sara {
+    object-position: center 25%;
+}
